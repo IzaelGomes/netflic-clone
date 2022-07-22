@@ -1,0 +1,502 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  overflow-x: hidden;
+  background-color: #333;
+  
+}
+/*------------------------estilização do header ---------------*/
+header{
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  min-width: 300px;
+}
+
+.header-content{
+  display: flex;
+  padding-top: 20px;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+
+.header-content img{
+  width: 90px;
+}
+
+.header-content a{
+  color: #fff;
+ background-color: #e50914;
+ padding: 5px;
+ width: 60px;
+ text-align: center;
+ text-decoration: none;
+ border-radius: 2px;
+}
+
+@media(min-width:552px){
+  .header-content{
+    width: 90%;
+  }
+  .header-content img{
+    width: 120px;
+  }
+
+  .header-content a{
+    width: 75px;
+    padding: 8px;
+    
+  }
+  
+}
+/*------------------------ fim estilização do header ---------------*/
+
+/*------------------------estilização do main ---------------*/
+main{
+  overflow-x: hidden;
+  background: url('/img/bg.jpg') center  ;
+  background-size: cover;
+  height: 65vh;
+  width: 100vw;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  
+}
+
+.gradient{
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+}
+
+.principal-content{
+padding: 1rem;
+text-align: center;
+color: white;
+height:320px;
+z-index: 10;
+font-family: sans-serif;
+margin-top: 10px;
+
+}
+
+.principal-content h1{
+font-size: 1.8rem;
+max-width: 800px;
+}
+
+.principal-content h2{
+  font-size: 1.2rem;
+  font-weight: lighter;
+  padding-bottom: 25px;
+}
+
+.principal-content h1,h2{
+  padding: 0.5rem;
+}
+.titlo-input{
+  padding-top: 15px;
+  font-size: 1.2rem;
+}
+
+.input-email{
+  padding: 15px;
+  width: 100%;
+  max-width: 400px;
+ margin-bottom: 10px;
+ margin-top: 15px;
+}
+
+.btn-email{
+  background-color: #e50914;
+  width: 110px;
+  padding: 12px;
+  margin-top: 4px;
+  border: none;
+  color: #fff;
+  border-radius: 2px;
+  font-family: sans-serif;
+  font-size: 17px;
+}
+
+@media(min-width:370px){
+  main{
+    height: 70vh;
+  }
+}
+
+@media(min-width:552px){
+  main{
+    height: 100vh;
+  }
+
+  .principal-content h1{
+    font-size: 2.9rem;
+    }
+    .principal-content h2{
+      font-size: 1.8rem;
+    }
+
+    .titlo-input{
+      font-size: 1.2rem;
+    } 
+}
+@media(min-width:757px){
+  .input-email{
+   margin-top: 15px;
+    padding: 19px;
+  }
+}
+
+@media(min-width:952px){
+  .form-main{
+    display: flex;
+    justify-content: center;
+  }
+  .btn-email{
+    margin-top: 15px;
+    height: 55px;
+    width: 180px;
+    font-size: 25px;
+
+  }
+}
+
+@media(min-width:1190px){
+  .principal-content h1{
+    font-size: 3.7rem;
+    }
+
+    .input-email{
+       padding: 22px;
+     }
+
+     .btn-email{
+      height: 63px;
+     }
+}
+
+
+
+/*------------------------ fim estilização do main ---------------*/
+
+/*------------------------ estilização da seção 1 ---------------*/
+
+.sec-1-tv{
+  background-color: black;
+  margin-top: 10px;
+}
+
+.sec-1{
+  background-color: black;
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+@media(min-width:953px){
+  .sec-1{
+    flex-direction: row;
+    padding: 30px;
+    align-items: center;
+  }
+}
+
+.container-tv{
+  width: 85%;
+  min-width: 300px;
+  padding-top: 40px;
+  margin: 0 auto;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+
+
+@media(min-width:953px){
+  .container-tv {
+      text-align: left;
+      width: 45%;
+      max-width: 500px;
+  }
+
+  .container-tv h1{
+    font-size: 2.9rem;
+  }
+
+  .tv{
+    width: 40%; 
+  }
+
+  .container-tv p{
+    padding-bottom: 10px;
+    font-size: 2rem;
+  }
+}
+
+.container-tv h1{
+  padding-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+.container-tv p{
+  padding-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.tv{
+  max-width: 80%;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+/*------------------------ fim estilização da sessão 1 ---------------*/
+
+/*------------------------estilização da Sessão 2 ---------------*/
+.sec-2-download{
+  background-color: black;
+  margin-top: 10px;
+}
+
+.sec-2{
+  background-color: black;
+  padding-top: 40px;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1350px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+@media(min-width:953px){
+  .sec-2{
+    flex-direction: row;
+    padding: 30px;
+    align-items: center;
+   
+  }
+}
+
+
+.container-download{
+  color: #fff;
+  width: 85%;
+  min-width: 300px;
+  margin: 0 auto;
+  font-family: sans-serif;
+  text-align: center;
+}
+.container-download h1{
+  padding-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+.container-download p {
+  font-size: 1.2rem;
+}
+
+@media(min-width:953px){
+  .container-download{
+    max-width: 540px;
+    padding-right: 30px;
+ 
+  }
+  .container-download h1{
+    font-size: 2.8rem;
+  }
+
+  .container-download p{
+    font-size: 25px;
+  }
+}
+
+.eleven-img{
+  max-width: 80%;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+@media(min-width:953px){
+  .eleven-img{
+    order: -1;
+  }
+}
+
+/*** estilização da Sessão 3 ***/
+
+.sec-2-watch{
+  background-color: black;
+  margin-top: 10px;
+  
+}
+
+.sec-2-w{
+  background-color: black;
+  padding-top: 40px;
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+}
+
+.container-watch h1{
+  padding-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+.container-watch p {
+  font-size: 1.2rem;
+}
+
+@media(min-width:953px){
+  .sec-2-w{
+    flex-direction: row;
+    padding: 30px;
+    align-items: center;
+  }
+
+.container-watch{
+ 
+  font-family: sans-serif;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.container-watch h1{
+  padding-bottom: 10px;
+  
+}
+
+}
+
+@media(min-width:953px){
+  .container-watch{
+    max-width: 580px;
+    width: 40%;
+    padding-left: 20px;
+   text-align: left;
+   
+  }
+  .container-watch h1{
+    font-size: 2.8rem;
+    
+  }
+
+  .sec-2-download p{
+    font-size: 25px;
+  }
+}
+
+.device-pile{
+  max-width: 80%;
+  min-width: 300px;
+  margin: 0 auto;
+  
+}
+
+/*------------------------ fim da estilização da sessão 2 ---------------*/
+
+/*------------------------estilização da sessão 3 ---------------*/
+
+.sec-3-faq{
+  background-color: black;
+  margin-top: 10px;
+  width: 100%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.sec-3-faq h1{
+  text-align: center;
+  padding-top: 45px;
+  padding-bottom: 25px;
+  font-size: 1.8rem;
+}
+
+.FAQ{
+  width: 100%;
+}
+
+.question{
+  background-color: #303030;
+  margin-bottom: 10px;
+  padding: 9px;
+  
+}
+
+.question h2{
+  font-weight: lighter;
+  font-size: 1.2rem;
+}
+
+
+.question p {
+  font-size: 1.2rem;
+  width: 98%;
+  padding-bottom: 20px;
+  padding-left: 10px;
+}
+
+.res-faq{
+  width: 100%;
+  padding-top:20px;
+  border-top: 1px solid black;
+  display: none;
+}
+
+.faq-form{
+  text-align: center;
+  padding-top: 20px;
+}
+
+.faq-form h2{
+  font-size: 17px;
+  max-width: 500px;
+}
+
+@media(min-width:555px){
+  .FAQ{
+    width: 80%;
+  }
+}
+
+@media(min-width:950px){
+  .FAQ{
+    width: 780px;
+  }
+  .question h2{
+    font-size: 1.6rem;
+  }
+  .sec-3-faq h1{
+    font-size: 2.8rem;
+  }
+  }
