@@ -61,7 +61,7 @@ header{
 /*------------------------estilização do main ---------------*/
 main{
   overflow-x: hidden;
-  background: url('/img/bg.jpg') center  ;
+  background: url('../img/bg.jpg') center  ;
   background-size: cover;
   height: 65vh;
   width: 100vw;
@@ -244,12 +244,12 @@ max-width: 800px;
   }
 
   .tv{
-    width: 40%; 
+    width: 100%; 
   }
 
   .container-tv p{
     padding-bottom: 10px;
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -267,6 +267,21 @@ max-width: 800px;
   max-width: 80%;
   min-width: 300px;
   margin: 0 auto;
+  
+}
+
+.img-tv{
+ 
+position: relative;
+
+}
+
+.video-tv{
+  position: absolute;
+  width: 58%;
+  max-width:470px ;
+  top: 21%;
+  left: 21%;
 }
 
 /*------------------------ fim estilização da sessão 1 ---------------*/
@@ -343,7 +358,7 @@ max-width: 800px;
   }
 }
 
-/*** estilização da Sessão 3 ***/
+/*--------------------------- estilização da Sessão 3 -----------------------*/
 
 .sec-2-watch{
   background-color: black;
@@ -416,7 +431,23 @@ max-width: 800px;
   max-width: 80%;
   min-width: 300px;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.device-pile-img{
+  position: relative;
   
+}
+
+.video-tela{
+  position: absolute ;
+  left: 25%;
+  top: 10%;
+  width: 50%;
+  max-width: 450px;
+  
+ 
 }
 
 /*------------------------ fim da estilização da sessão 2 ---------------*/
@@ -450,7 +481,18 @@ max-width: 800px;
   background-color: #303030;
   margin-bottom: 10px;
   padding: 9px;
-  
+}
+
+.res-faq{
+  max-height: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition:ease 0.7s;
+}
+
+.question.active .res-faq{
+  max-height: 500px;
+  opacity: 1;
 }
 
 .question h2{
@@ -464,13 +506,6 @@ max-width: 800px;
   width: 98%;
   padding-bottom: 20px;
   padding-left: 10px;
-}
-
-.res-faq{
-  width: 100%;
-  padding-top:20px;
-  border-top: 1px solid black;
-  display: none;
 }
 
 .faq-form{
@@ -499,4 +534,18 @@ max-width: 800px;
   .sec-3-faq h1{
     font-size: 2.8rem;
   }
+  }
+
+  /***** footer *****/ 
+
+  footer{
+    background-color: black;
+    margin-top: 10px;
+    font-family: sans-serif;
+  }
+
+  footer h1{
+    color: #737373;
+    font-size: 1rem;
+    text-align: center;
   }
